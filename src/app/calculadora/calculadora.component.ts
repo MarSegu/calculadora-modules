@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { valor } from './valor.model';
 
 @Component({
   selector: 'app-calculadora',
@@ -7,13 +8,10 @@ import { Component } from '@angular/core';
 })
 export class CalculadoraComponent {
 
-  titulo = "Aplicación de Calculadora";
-  resultado: number = 0;
-  operandoA: number = 0;
-  operandoB: number = 0;
+	titulo = "Aplicación de Calculadora";
+	resultado: number; 
 
-  sumar():void{
-	this.resultado = this.operandoA + this.operandoB;
-  }
-
+	resultadoSuma(operandos: number):void{
+		this.resultado = operandos.valueOf(); 
+	}
 }
