@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { valor } from './valor.model';
 
 @Component({
   selector: 'app-calculadora',
@@ -12,6 +11,6 @@ export class CalculadoraComponent {
 	resultado: number; 
 
 	resultadoSuma(operandos: number):void{
-		this.resultado = operandos.valueOf(); 
+		this.resultado = operandos; 
 	}
 }

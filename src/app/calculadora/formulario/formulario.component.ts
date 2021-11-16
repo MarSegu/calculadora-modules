@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { valor } from '../valor.model';
+import { empty } from 'rxjs';
 
 @Component({
   selector: 'app-formulario',
@@ -13,12 +13,12 @@ export class FormularioComponent implements OnInit {
 	ngOnInit(): void {
 	}
 
-	@Output() valores = new EventEmitter<number>();
+	@Output() valoresFormulario = new EventEmitter<number>();
 
-	operandoA: number = 0;
-	operandoB: number = 0;
+	operandoA: number;
+	operandoB: number;
 	
 	sumar(): void{
-		this.valores.emit(this.operandoA + this.operandoB);
+		this.valoresFormulario.emit(this.operandoA + this.operandoB);
 	}
 }

@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { valor } from '../valor.model';
 
 @Component({
   selector: 'app-resultado',
@@ -12,5 +11,5 @@ export class ResultadoComponent implements OnInit {
 
 	ngOnInit(): void {
 	}
-	@Input() operandos: valor;
+	@Input() resultado: number;
 }

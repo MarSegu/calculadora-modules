@@ -1,6 +1,9 @@
 <div class="container">
 	<h1>{{ titulo }}</h1>
 	<app-formulario
-		(Sumar)="resultadoSuma($event)"
+		(valoresFormulario)="resultadoSuma($event)"
 	></app-formulario>
+	<app-resultado
+		[resultado] = "resultado">
+	</app-resultado>
 </div>
