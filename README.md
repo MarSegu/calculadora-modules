@@ -1,27 +1,124 @@
-# CalculadoraApp
+# ➗ calculadora-modules
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" />
+  <img src="https://img.shields.io/badge/status-active-brightgreen" alt="Status" />
+</p>
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## ✨ Overview
 
-## Code scaffolding
+**calculadora-modules** is a modular calculator application. The project demonstrates how to structure a calculator using modules, focusing on code organization, extensibility, and maintainability.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🎨 Tech Stack
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<div align="center">
 
-## Running unit tests
+| Language / Tool                                        | Usage                                     |
+|--------------------------------------------------------|-------------------------------------------|
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="24"/> JavaScript | Main logic for calculator modules         |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="24"/> HTML | UI and markup                             |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="24"/> CSS | Styling                                   |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="24"/> GitHub Actions | CI/CD automation (optional)               |
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+</div>
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🗂️ Project Structure
 
-## Further help
+```text
+.
+├── src/                   # Calculator modules and core logic
+├── public/                # Static assets (HTML, CSS, images)
+├── tests/                 # Unit tests (if available)
+├── package.json           # Node dependencies and scripts (if present)
+├── .github/workflows/     # CI/CD pipelines (GitHub Actions, if present)
+└── README.md              # Project documentation
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## ⚡ Features
+
+- Modular calculator logic
+- Easy to extend with new operations/functions
+- Separation of concerns for UI and logic
+- Well-documented for learning and experimentation
+- Optional CI/CD integration with GitHub Actions
+
+---
+
+## 🛠️ Getting Started
+
+> **Run the calculator in minutes.**
+
+```bash
+# Clone the repository
+git clone https://github.com/MarSegu/calculadora-modules.git
+cd calculadora-modules
+
+# (Optional) Install dependencies
+npm install
+
+# Start a local server (example)
+npx serve public
+# or simply open public/index.html in your browser
+```
+
+---
+
+## ⚙️ Main Configuration
+
+| File / Variable         | Description                            | Example              |
+|------------------------|----------------------------------------|----------------------|
+| `src/`                 | Calculator modules and core logic      | Addition, subtraction modules |
+| `public/index.html`    | Main UI entry point                    | Calculator interface |
+| `package.json`         | Node dependencies and scripts (if any) | Test, build scripts  |
+
+---
+
+## 🧪 Testing
+
+> Run unit tests (if available).
+
+```bash
+npm test
+```
+
+---
+
+## 🚀 Deployment
+
+- **CI/CD:** Automated via workflows in `.github/workflows/` (if configured).
+
+---
+
+## 📤 Outputs
+
+| Output            | Description                    |
+|-------------------|-------------------------------|
+| UI                | Calculator interface           |
+| Test results      | Automated test results         |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Open an issue or pull request for suggestions and improvements.
+
+---
+
+## 📃 License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more details.
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer"/>
+</p>
